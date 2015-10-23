@@ -12,15 +12,17 @@ namespace Mathmagician
     public class NaturalNumbers
     {
         protected int first; //create data member with next line
+        protected int increment;
 
         public NaturalNumbers() //define a constuctor
         {
             first = 1;
+            increment = 1;
         }
 
         public virtual int GetNext(int x)
         {
-            return x + 1;
+            return x + increment;
         }
 
         public int GetFirst()
