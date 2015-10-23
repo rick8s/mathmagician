@@ -11,14 +11,14 @@ namespace Mathmagician
 {
     public class NaturalNumbers
     {
-        private int first; //create data member with next line
+        protected int first; //create data member with next line
 
         public NaturalNumbers() //define a constuctor
         {
             first = 1;
         }
 
-        public int GetNext(int x)
+        public virtual int GetNext(int x)
         {
             return x + 1;
         }
